@@ -1,0 +1,14 @@
+{
+  "dependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.6.0"
+  },
+  "name": "react-controlflow",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Matthew Hamlin <hamlim@outlook.com> (https://matthamlin.me/)",
+  "license": "MIT",
+  "scripts": {
+    "build": "rm -rf dist/ && babel src/ --out-dir dist/"
+  }
+}
