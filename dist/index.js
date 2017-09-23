@@ -25,7 +25,7 @@ var Switch = exports.Switch = function Switch(_ref3) {
   var children = _ref3.children,
       on = _ref3.on;
 
-  var maybeChild = Children.map(children, function (child) {
+  var maybeChild = _react.Children.map(children, function (child) {
     if (child.type === Case) {
       if (child.props.condition === on) {
         return child;
@@ -35,7 +35,7 @@ var Switch = exports.Switch = function Switch(_ref3) {
   if (Array.isArray(maybeChild) && maybeChild.length > 0) {
     return maybeChild;
   } else {
-    var childArr = Children.toArray(children);
+    var childArr = _react.Children.toArray(children);
     return childArr[childArr.length - 1];
   }
 };

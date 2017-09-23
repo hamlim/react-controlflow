@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { Children } from 'react'
 
 export const Case = ({ children }) => children
 
