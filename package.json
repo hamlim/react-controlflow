@@ -4,7 +4,7 @@
     "babel-preset-env": "^1.6.0"
   },
   "name": "react-controlflow",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "main": "dist/index.js",
   "author": "Matthew Hamlin <hamlim@outlook.com> (https://matthamlin.me/)",
   "license": "MIT",
