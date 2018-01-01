@@ -1,4 +1,4 @@
-import React, { Children } from 'react'
+import { Children } from 'react'
 
 export const Case = ({ children }) => children
 
@@ -12,10 +12,5 @@ export const Switch = ({ children, on }) => {
       }
     }
   })
-  if (Array.isArray(maybeChild) && maybeChild.length > 0) {
-    return maybeChild
-  } else {
-    const childArr = Children.toArray(children)
-    return childArr[childArr.length - 1]
-  }
+  return maybeChild
 }
