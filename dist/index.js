@@ -7,10 +7,6 @@ exports.Switch = exports.Default = exports.Case = undefined;
 
 var _react = require('react');
 
-var _react2 = _interopRequireDefault(_react);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
 var Case = exports.Case = function Case(_ref) {
   var children = _ref.children;
   return children;
@@ -32,10 +28,5 @@ var Switch = exports.Switch = function Switch(_ref3) {
       }
     }
   });
-  if (Array.isArray(maybeChild) && maybeChild.length > 0) {
-    return maybeChild;
-  } else {
-    var childArr = _react.Children.toArray(children);
-    return childArr[childArr.length - 1];
-  }
+  return maybeChild;
 };
